@@ -1,0 +1,26 @@
+@import '../../../../style/abstracts/_mixins';
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  @include respmi(360) {
+    height: 13.75rem;
+  }
+  @include respmi(600) {
+    margin: 0 auto;
+    height: 18.75rem;
+    width: 50%;
+    margin-bottom: 6.25rem;
+  }
+  @include respmi(960) {
+    margin-bottom: 0;
+  }
+  @include respmi(1290) {
+    height: 25rem;
+  }
+}

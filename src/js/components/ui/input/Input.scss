@@ -1,0 +1,25 @@
+@import '../../../../style/abstracts/_mixins';
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  &__el {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font: inherit;
+    box-sizing: border-box;
+    padding: 0.375rem 0.625rem;
+    margin-bottom: 0.625rem;
+    &:focus {
+      outline: none;
+      background-color: #ccc;
+    }
+  }
+}
+.invalid {
+  border: 1px solid #ff0000;
+  background-color: #fda49a;
+}

@@ -1,0 +1,23 @@
+@import '../../../../style/abstracts/_mixins';
+
+.order {
+  width: 80%;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  padding: 0.625rem;
+  margin: 0.625rem auto;
+  box-sizing: border-box;
+  line-height: 3rem;
+  p {
+    text-align: center;
+    span {
+      text-transform: uppercase;
+      border: 1px solid #ccc;
+      margin: 0 0.5rem;
+      padding: 0.3125rem;
+    }
+    strong {
+      text-transform: uppercase;
+    }
+  }
+}

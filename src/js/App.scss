@@ -1,0 +1,47 @@
+@import "../style/abstracts/_mixins";
+@import "../style/abstracts/_variables";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+}
+.root {
+  display: flex;
+  flex-direction: column;
+}
+.app__wrapper {
+  display: flex;
+  width: 100%;
+  height: calc((100vh - var(--footer-height)));
+}
+.error {
+  color: #ff0000;
+  font-weight: 700;
+  &__page {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &-title {
+      color: #ff0000;
+      text-align: center;
+    }
+  }
+  &__message {
+    @include center-position(50%);
+    font-weight: 700;
+    color: #ff0000;
+  }
+}

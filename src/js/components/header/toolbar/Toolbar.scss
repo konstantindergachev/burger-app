@@ -1,0 +1,28 @@
+@import "../../../../style/abstracts/_mixins";
+@import "../../../../style/abstracts/_variables";
+
+.header {
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #703b09;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+  z-index: 90;
+  nav {
+    height: 100%;
+  }
+  &__logo {
+    height: 80%;
+  }
+}
+.desktop__only {
+  @include respma(499) {
+    display: none;
+  }
+}

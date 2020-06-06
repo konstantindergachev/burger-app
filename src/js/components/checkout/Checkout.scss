@@ -1,0 +1,30 @@
+@import '../../../style/abstracts/_mixins';
+.checkout {
+  &__container {
+    width: 100%;
+    align-self: flex-end;
+  }
+  &__summary {
+    text-align: center;
+    h1 {
+      font-size: 1.625rem;
+      margin-bottom: 0.625rem;
+    }
+  }
+}
+.hide {
+  @include respmi(320) {
+    display: none;
+  }
+}
+.centered {
+  @include respmi(320) {
+    align-self: center;
+  }
+  @include respmi(960) {
+    align-self: flex-end;
+  }
+  @include respmi(1270) {
+    align-self: center;
+  }
+}

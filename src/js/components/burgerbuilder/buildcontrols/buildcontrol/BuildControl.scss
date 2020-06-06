@@ -1,0 +1,36 @@
+@import '../../../../../style/abstracts/_animation';
+
+.label {
+  padding: 0.625rem;
+  font-weight: 700;
+  width: 5rem;
+}
+
+.buildcontrol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.3125rem 0;
+}
+
+button {
+  display: block;
+  font: inherit;
+  padding: 0.3125rem;
+  margin: 0 0.3125rem;
+  width: 5rem;
+  border: 1px solid #aa6817;
+  cursor: pointer;
+  outline: none;
+  &:hover:disabled {
+    background-color: #ac9980;
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  &:disabled {
+    background-color: #ac9980;
+    border: 1px solid #7e7365;
+    color: #ccc;
+    cursor: default;
+  }
+}

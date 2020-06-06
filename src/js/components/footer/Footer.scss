@@ -1,0 +1,20 @@
+@import "../../../style/abstracts/_mixins";
+@import "../../../style/abstracts/_variables";
+.footer {
+  width: 100%;
+  height: var(--footer-height);
+  background-color: #703b09;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+  z-index: 90;
+  &__copyright {
+    order: -1;
+    font-weight: 300;
+    color: #c6c6c6;
+    margin-left: 3.125rem;
+    flex: 1 0 auto;
+  }
+}

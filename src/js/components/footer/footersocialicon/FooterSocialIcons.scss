@@ -1,0 +1,27 @@
+@import "../../../../style/abstracts/_mixins";
+.footer__svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.footer__img {
+  transition: all .3s ease-out;
+  fill: #c6c6c6;
+  &:hover {
+    fill: rgba(#c6c6c6, .2);
+  }
+}
+.footer__icon {
+  margin-left: 0.625rem;
+}
+.footer__icon-facebook {
+  flex: 0 1 4.5%;
+  @include respma(1290) {
+    flex: 0 1 6.5%;
+  }
+  @include respma(1030) {
+    flex: 0 1 8%;
+  }
+  @include respma(490) {
+    flex: 0 1 20%;
+  }
+}

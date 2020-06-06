@@ -1,0 +1,28 @@
+@import '../../../style/abstracts/_mixins';
+.orders {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  &__error {
+    margin: 5rem auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 2px 3px #ccc;
+    border: 1px solid #eee;
+    padding: 0.625rem;
+    box-sizing: border-box;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ff0000;
+    cursor: pointer;
+  }
+}
+.temp {
+  padding: 0.625rem;
+  border: 1px dashed #777;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ff0000;
+  cursor: pointer;
+}

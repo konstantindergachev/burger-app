@@ -1,0 +1,5 @@
+/.firebase
+/build
+/dist
+/node_modules
+settings.js

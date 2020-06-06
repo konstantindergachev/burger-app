@@ -1,0 +1,31 @@
+@import '../../../../style/abstracts/_mixins';
+@import '../../../../style/abstracts/_animation';
+
+.buildcontrols {
+  display: flex;
+  width: 100%;
+  background-color: #cf8f2e;
+  flex-flow: column;
+  align-items: center;
+
+  box-shadow: 0 2px 1px #ccc;
+  margin: auto;
+  padding: 0.625rem 0;
+  @include respmi(600) {
+    margin-bottom: 3.125rem;
+  }
+  @include respmi(960) {
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  @include respmi(1290) {
+    height: 25rem;
+  }
+  h4 {
+    font-weight: 700;
+    span {
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../../style/abstracts/_variables";
+@import "../../../style/abstracts/_mixins";
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: flex-end;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5rem;
+  @include respmi(600) {
+    align-self: center;
+  }
+
+  @include respmi(960) {
+    flex-direction: row;
+    margin-top: var(--header-height);
+  }
+}
